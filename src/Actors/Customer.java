@@ -1,5 +1,7 @@
 package Actors;
 
+import java.util.ArrayList;
+
 public class Customer extends Person{
     private static int card_number;
     private static String user_password;
@@ -9,8 +11,9 @@ public class Customer extends Person{
         super(name, surname);
         this.card_number = card_number;
         this.user_password = user_password;
+        list_of_all_customers.add(this);
     }
-
+    public static ArrayList<Customer> list_of_all_customers = new ArrayList<>();
     // the empty constructor
     public Customer(){}
 
