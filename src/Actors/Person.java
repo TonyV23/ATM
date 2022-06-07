@@ -2,12 +2,12 @@ package Actors;
 
 public class Person {
     private static String name;
-    private static String surname;
+    private static String user_name;
 
     // the constructor
-    public Person(String name, String surname){
+    public Person(String name, String user_name){
         this.name= name;
-        this.surname = surname;
+        this.user_name = user_name;
     }
 
     // the empty constructor
@@ -23,12 +23,12 @@ public class Person {
         Person.name = name;
     }
 
-    public static String getSurname() {
-        return surname;
+    public static String getUser_name() {
+        return user_name;
     }
 
-    public static void setSurname(String surname) {
-        Person.surname = surname;
+    public static void setUser_name(String user_name) {
+        Person.user_name = user_name;
     }
 
 }

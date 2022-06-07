@@ -7,8 +7,8 @@ public class Customer extends Person{
     private static String user_password;
 
     // the constructor
-    public Customer(String name, String surname, int card_number, String user_password){
-        super(name, surname);
+    public Customer(String name, String user_name, int card_number, String user_password){
+        super(name, user_name);
         this.card_number = card_number;
         this.user_password = user_password;
         list_of_all_customers.add(this);
